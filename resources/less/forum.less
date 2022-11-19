@@ -1,0 +1,79 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a.wiki {
+    border-bottom: 2px dotted @primary-color;
+    font-weight: 400;
+    color: @text-color;
+}
+
+.quicklinks {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    scrollbar-width: none; /* firefox */
+
+    &::-webkit-scrollbar {
+        /* webkit */
+        display: none;
+    }
+
+    a {
+        margin-right: 10px;
+        padding: 5px 10px;
+        border: 1px solid @primary-color;
+        color: @primary-color;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.1s;
+
+        &:hover {
+            background: @primary-color;
+            color: white;
+            text-decoration: none;
+        }
+
+        i {
+            padding-right: 5px;
+        }
+    }
+
+    @media @tablet-up {
+        display: none;
+    }
+}
+
+.FibraClickAds-fake-poststream-item {
+    // Mimic `.PostStream-item` borders even if we are in fact inside one
+    border-top: 1px solid @control-bg;
+}
+
+.CommentPost .Post-header {
+    li:not(:last-child) {
+        white-space: nowrap;
+    }
+
+    .UserCard {
+        white-space: normal;
+    }
+
+    .item-user-label {
+        padding: 1px 10px;
+        border-radius: 15px;
+
+        &.author {
+            border: 1px solid fade(@muted-color, 80%);
+        }
+
+        &.flair {
+            color: white;
+        }
+    }
+}
+
+.CommentPost .Button--red {
+    color: @error-color;
+}
