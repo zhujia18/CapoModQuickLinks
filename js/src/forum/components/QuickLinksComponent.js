@@ -8,8 +8,8 @@ export default class QuickLinksComponent extends Component {
         this.links = [
             {
                 icon: 'fas fa-align-left',
-                text: 'WIKI',
-                link: 'https://fibra.click/?utm_source=fibraclick&utm_medium=referral&utm_campaign=mobilelinks'
+                text: 'Tags',
+                link: '/tags'
             },
             {
                 icon: 'far fa-newspaper',
@@ -40,7 +40,7 @@ export default class QuickLinksComponent extends Component {
                 Link.component({
                     href: x.link,
                     external: true,
-                    target: '_blank'
+                    target: '_self'
                 }, m.trust(this.linkText(x)))
             )
         );
