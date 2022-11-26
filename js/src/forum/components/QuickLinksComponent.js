@@ -39,9 +39,7 @@ export default class QuickLinksComponent extends Component {
         return m("div[class='container quicklinks']",
             this.links.map(x =>
                 Link.component({
-                    href: x.link,
-                    external: false,
-                    target: '_self'
+                    href: x.link
                 }, m.trust(this.linkText(x)))
             )
         );
