@@ -1,5 +1,6 @@
 import Component from 'flarum/common/Component';
 import Link from 'flarum/common/components/Link';
+import LinkButton from 'flarum/common/components/LinkButton';
 
 export default class QuickLinksComponent extends Component {
     oninit(vnode) {
@@ -39,7 +40,7 @@ export default class QuickLinksComponent extends Component {
             this.links.map(x =>
                 Link.component({
                     href: x.link,
-                    external: true,
+                    external: false,
                     target: '_self'
                 }, m.trust(this.linkText(x)))
             )
