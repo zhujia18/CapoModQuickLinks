@@ -7,22 +7,22 @@ export default class QuickLinksComponent extends Component {
 
         this.links = [
             {
-                icon: 'fa-solid fa-tags',
+                icon: 'fa-solid fa-sliders',
                 text: '全部标签',
                 link: '/tags'
             },
             {
-                icon: 'fa-solid fa-gears',
+                icon: 'fa-solid fa-wrench',
                 text: '改装',
                 link: '/t/refitting'
             },
             {
-                icon: 'fa-solid fa-school',
+                icon: 'fa-solid fa-key',
                 text: '教程',
                 link: '/t/course'
             },
             {
-                icon: 'fa-regular fa-circle-question',
+                icon: 'fa-solid fa-circle-question',
                 text: '问答',
                 link: '/t/qanda'
             }
