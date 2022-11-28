@@ -8,7 +8,7 @@ export default class QuickLinksComponent extends Component {
         this.links = [
             {
                 icon: 'fa-solid fa-sliders',
-                text: '全部标签',
+                text: '分类标签',
                 link: '/tags'
             },
             {
